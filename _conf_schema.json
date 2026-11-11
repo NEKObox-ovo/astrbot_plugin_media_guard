@@ -1,0 +1,32 @@
+{
+  "enabled": {
+    "type": "bool",
+    "description": "启用媒体发送守卫",
+    "default": true,
+    "hint": "关闭后钩子立即放行，行为与未安装时一致"
+  },
+  "localize_remote": {
+    "type": "bool",
+    "description": "远程资源下载到本地后再发送",
+    "default": true,
+    "hint": "KOOK 不会主动拉取远程 URL，必须开启，否则会报「资源不存在 / 40000」"
+  },
+  "compress_image": {
+    "type": "bool",
+    "description": "自动压缩超大图片",
+    "default": true,
+    "hint": "超过阈值的图片会缩到 2048px 以内并转 JPEG"
+  },
+  "image_limit_mb": {
+    "type": "float",
+    "description": "图片体积阈值（MB）",
+    "default": 2.0,
+    "hint": "超过这个大小才触发压缩"
+  },
+  "download_limit_mb": {
+    "type": "float",
+    "description": "远程资源下载上限（MB）",
+    "default": 30.0,
+    "hint": "超过上限的资源不做本地化，避免拖垮内存"
+  }
+}

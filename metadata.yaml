@@ -1,0 +1,7 @@
+name: astrbot_plugin_media_guard
+display_name: 媒体发送守卫
+desc: 修复各平台图片 / 文件发送失败：远程资源先落本地、超大图片自动压缩、失效文件降级提示
+version: v1.0.0
+author: 猫小箱
+repo: https://github.com/NEKObox-ovo/astrbot_plugin_media_guard
+astrbot_version: ">=4.5.0"
